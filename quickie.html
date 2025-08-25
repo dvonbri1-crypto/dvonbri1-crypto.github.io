@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>von Briesen Incorporated ~ My Quick Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e3e7ed 100%);
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2d3748;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 0.5rem;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #63b3ed;
+            text-decoration: underline;
+        }
+        main {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(44,62,80,0.07);
+            padding: 2rem;
+        }
+        main h2 {
+            font-size: 2rem;
+            color: #2b6cb0;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        main p {
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+        }
+        footer {
+            background: #f1f5f9;
+            color: #4a5568;
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+            font-size: 1rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 3rem;
+        }
+        footer a {
+            color: #3182ce;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: #2b6cb0;
+            text-decoration: underline;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #cbd5e1;
+            margin: 2rem 0;
+        }
+        @media (max-width: 800px) {
+            main {
+                padding: 1rem;
+                margin: 1rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            main h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            It's von Briesen Incorporated!
+        </h1>
+        <nav>
+            <a href="http://disney.com">The sloppiest place on earth</a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+    </header>
+    <main>
+        <h2>
+            My Quick Page
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam urna, eget aliquam erat erat eu urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Nulla facilisi. Suspendisse potenti. Etiam euismod, justo at dictum cursus, enim erat cursus erat, nec dictum urna erat eu urna. Vivamus euismod, nisi eu tincidunt consectetur, nisi nisl aliquam urna, eget aliquam erat erat eu urna.</p>
+        <p>Morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam urna, eget aliquam erat erat eu urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+    </main>
+    <footer>
+    <hr>
+    <p>&copy; 2024 von Briesen Incorporated. All rights reserved.</p>
+    <p>
+        <a href="mailto:info@vonbriesen.com">Contact Us</a> |
+        <a href="https://github.com/dvonbri1-crypto">GitHub</a> |
+        <a href="https://twitter.com/vonbrieseninc">Twitter</a>
+    </p>
+    <p>
+        <small>
+        Made with ❤️ in New York.<br>
+        Last updated: <span id="last-updated"></span>
+        </small>
+    </p>
+    <script>
+        document.getElementById('last-updated').textContent = new Date(document.lastModified).toLocaleDateString();
+    </script>
+    </footer>
+</body>
+</html>
